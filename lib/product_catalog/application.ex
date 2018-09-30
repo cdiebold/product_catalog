@@ -11,7 +11,7 @@ defmodule ProductCatalog.Application do
       # Start the Ecto repository
       supervisor(ProductCatalog.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(ProductCatalogWeb.Endpoint, []),
+      supervisor(ProductCatalogWeb.Endpoint, [])
       # Start your own worker by calling: ProductCatalog.Worker.start_link(arg1, arg2, arg3)
       # worker(ProductCatalog.Worker, [arg1, arg2, arg3]),
     ]
