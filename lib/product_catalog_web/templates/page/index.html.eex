@@ -1,36 +1,162 @@
-<div class="jumbotron">
-  <h2><%= gettext "Welcome to %{name}!", name: "Phoenix" %></h2>
-  <p class="lead">A productive web framework that<br />does not compromise speed and maintainability.</p>
-</div>
-
-<div class="row marketing">
-  <div class="col-lg-6">
-    <h4>Resources</h4>
-    <ul>
-      <li>
-        <a href="http://phoenixframework.org/docs/overview">Guides</a>
-      </li>
-      <li>
-        <a href="https://hexdocs.pm/phoenix">Docs</a>
-      </li>
-      <li>
-        <a href="https://github.com/phoenixframework/phoenix">Source</a>
-      </li>
-    </ul>
-  </div>
-
-  <div class="col-lg-6">
-    <h4>Help</h4>
-    <ul>
-      <li>
-        <a href="http://groups.google.com/group/phoenix-talk">Mailing list</a>
-      </li>
-      <li>
-        <a href="http://webchat.freenode.net/?channels=elixir-lang">#elixir-lang on freenode IRC</a>
-      </li>
-      <li>
-        <a href="https://twitter.com/elixirphoenix">@elixirphoenix</a>
-      </li>
-    </ul>
+<div class="jumbotron jumbotron-fluid">
+  <div class="custom-header__text-box">
+    <h1 class="heading-primary">
+      <span class="heading-primary--main">NSN Parts</span>
+      <span class="heading-primary--sub">Let us find them for you</span>
+    </h1>
+    <a href="/products" class="custom-btn custom-btn--white custom-btn--animated">Browse</a>
   </div>
 </div>
+<section class='section-about'>
+  <div class='u-center-text u-margin-bottom-8'>
+    <h2 class='heading-secondary'>Our Story</h2>
+  </div>
+  <div class='container-fluid'>
+    <div class='row'>
+      <div class='col-sm-12 col-md-6'>
+        <h3 class='heading-tertiary u-margin-bottom-2'>Our Founding</h3>
+        <p class='paragraph'>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quo recusandae voluptatibus animi
+          perferendis, tempora voluptatem est, nam saepe, veritatis ipsa et sint? Temporibus officiis quo maxime
+          voluptas veniam rerum.
+        </p>
+        <h3 class='heading-tertiary u-margin-bottom-2'>Our Services</h3>
+        <p class='paragraph'>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi quo recusandae voluptatibus animi
+          perferendis, tempora voluptatem est, nam saepe, veritatis ipsa et sint? Temporibus officiis quo maxime
+          voluptas veniam rerum.
+        </p>
+      </div>
+      <div class='col-sm-12 col-md-6'>
+        <div class='composition'>
+          <img src="/images/tile.jpg" alt="Photo 1" class='composition__photo
+                  composition__photo--p1'>
+          <img src="/images/tile.jpg" alt="Photo 2" class='composition__photo
+                  composition__photo--p2'>
+          <img src="/images/tile.jpg" alt="Photo 3" class='composition__photo
+                  composition__photo--p3'>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class='section-features container-fluid'>
+  <!-- <h2> Why Choose Us?</h2> -->
+  <div class='row'>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Veteran Owned and Operared
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Shipping to all 50 states
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Quick Quote Turnover
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Customer Satisfaction
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Veteran Owned and Operared
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Shipping to all 50 states
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Quick Quote Turnover
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+    <div class='col-sm-6 col-md-3'>
+      <div class="card" style="opacity: 0.7;">
+        <div class="card-body">
+          <i class="icon-basic-accelerator"></i>
+          <h5 class="card-title">
+            Customer Satisfaction
+          </h5>
+
+          <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+            content.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</section>

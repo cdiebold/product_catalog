@@ -1,0 +1,28 @@
+<!--
+  2 - Navbar with brand left, links on center and right that collapse in the vertical mobile
+      menu
+-->
+<nav class="navbar navbar-light navbar-expand-md justify-content-center">
+  <a href="/" class="navbar-brand mr-0">
+    <img src="/images/logo.png" alt="Adellis Corporation" id='adellis_logo'>
+  </a>
+
+  <button class="navbar-toggler ml-1" type="button" data-toggle="collapse" data-target="#collapsingNavbar2">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="navbar-collapse collapse justify-content-between align-items-center w-100" id="collapsingNavbar2">
+    <ul class="navbar-nav mx-auto text-center">
+      <li class="nav-item active">
+        <button class='btn btn-secondary'>Quick Quote</b-btn>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav flex-row justify-content-center flex-nowrap">
+      <li class="nav-item">
+        <a href="/products" class="nav-link">Products</a>
+      </li>
+      <li class="nav-item">
+        <a href="/contact" class="nav-link">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

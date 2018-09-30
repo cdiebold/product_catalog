@@ -1,0 +1,16 @@
+//@import "variables";
+
+#adellis_logo {
+    max-height: 50px;
+}
+
+.navbar-light {
+    height: 100px;
+    background-color: $navigation-background-color;
+
+    .navbar-nav {
+        .nav-link {
+            color: #fff;
+        }
+    }
+}
