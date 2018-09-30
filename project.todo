@@ -1,0 +1,19 @@
+Database
+[] demilitarization table
+
+Quote
+[] create the quote form
+[] show validation errors on invalid data
+[] receive quote from client
+[] save quote to database 
+[] match quote nsn to a line item in database
+[] create pdf of quote
+[] send quote in a email
+[] autocomplete quote fields if on the product detail page
+
+commment
+[] create comment form
+[] show validation errors on invalid data
+[] save comment to database
+[] email comment to myself
+
