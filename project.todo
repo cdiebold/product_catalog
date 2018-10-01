@@ -12,8 +12,8 @@ Quote
 [] autocomplete quote fields if on the product detail page
 
 commment
-[] create comment form
+[x] create comment form
 [] show validation errors on invalid data
-[] save comment to database
+[x] save comment to database
 [] email comment to myself
 

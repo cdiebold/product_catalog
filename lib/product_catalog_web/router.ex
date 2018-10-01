@@ -18,7 +18,8 @@ defmodule ProductCatalogWeb.Router do
     pipe_through(:browser)
 
     get("/", PageController, :index)
-    get("/contact", PageController, :contact)
+    get("/contact", ContactController, :new)
+    post("/contact", ContactController, :create)
   end
 
   # Other scopes may use custom stacks.
