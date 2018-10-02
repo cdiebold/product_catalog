@@ -42,6 +42,7 @@ defmodule ProductCatalog.Mixfile do
       {:gettext, "~> 0.11"},
       {:cowboy, "~> 1.0"},
       # my dependencies
+      {:credo, "~> 0.10.0", only: [:dev, :test], runtime: false},
       {:hound, "~> 1.0"},
       {:bamboo, "~> 1.1"}
     ]

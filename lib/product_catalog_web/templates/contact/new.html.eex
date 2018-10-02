@@ -1,6 +1,12 @@
 <h1>Contact Us</h1>
 <div class='container'>
 <%= form_for @changeset, contact_path(@conn, :create), [as: :comment, id: "comment-form"], fn f -> %>
+<%= if @changeset.action do %>
+  <div id="form-error" class="alert alert-danger">
+    <p>Comment could not be submitted! Please check the errors below.</p>
+  </div>
+  <% end %>
+
   <div class="form-group">
     <%= label f, :title, class: "control-label" %>
     <%= text_input f, :title, class: "form-control" %>

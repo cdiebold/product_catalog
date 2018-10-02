@@ -3,7 +3,7 @@ defmodule ProductCatalogWeb.ContactController do
   alias ProductCatalog.CRM
 
   def index(conn, _params) do
-    render(conn, "index.html")
+    render(conn, "new.html")
   end
 
   def new(conn, _) do
@@ -16,10 +16,12 @@ defmodule ProductCatalogWeb.ContactController do
       {:ok, _comment} ->
         conn
         |> put_flash(:info, "Comment submitted successfully")
+        # TODO: email comment to adellis
         |> redirect(to: page_path(conn, :index))
+
       {:error, changeset} ->
         conn
-        |> render(conn, "new.html", changeset: changeset)
+        |> render("new.html", changeset: changeset)
     end
   end
 end

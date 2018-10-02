@@ -13,7 +13,7 @@ Quote
 
 commment
 [x] create comment form
-[] show validation errors on invalid data
+[x] show validation errors on invalid data
 [x] save comment to database
 [] email comment to myself
 

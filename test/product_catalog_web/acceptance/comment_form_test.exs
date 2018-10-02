@@ -26,7 +26,6 @@ defmodule ProductCatalog.Acceptance.CommentFormTest do
 
     assert current_path() == "/contact"
     message = find_element(:id, "form-error") |> visible_text()
-    assert message == "Comment could not be submitted! Please check the
-  errors below."
+    assert message == "Comment could not be submitted! Please check the errors below."
   end
 end
