@@ -1,5 +1,8 @@
 Database
 [] demilitarization table
+[] product
+[] line_item
+[] technical_characteristics
 
 Quote
 [] create the quote form
