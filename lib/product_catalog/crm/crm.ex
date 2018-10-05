@@ -10,6 +10,6 @@ defmodule ProductCatalog.CRM do
   def create_comment(attrs) do
     attrs
     |> build_comment
-    |> Repo.insert
+    |> Repo.insert()
   end
 end

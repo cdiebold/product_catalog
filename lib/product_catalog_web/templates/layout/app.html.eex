@@ -19,16 +19,16 @@
           <button type='button' class='close' data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <%= get_flash(@conn, :info) %>
+          <%= info %>
         </div>
         <% end %>
   
-      <%= if info = get_flash(@conn, :danger) do %>
+      <%= if danger = get_flash(@conn, :danger) do %>
         <div class='alert alert-danger alert-dismissable fade show' role='alert'>
           <button type='button' class='close' data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
-          <%= get_flash(@conn, :danger) %>
+          <%= danger %>
         </div>
         <% end %>
       <main role="main">

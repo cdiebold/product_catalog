@@ -18,5 +18,5 @@ commment
 [x] create comment form
 [x] show validation errors on invalid data
 [x] save comment to database
-[] email comment to myself
+[x] email comment to myself
 

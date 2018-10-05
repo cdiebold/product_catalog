@@ -56,3 +56,8 @@ config :product_catalog, ProductCatalog.Repo,
   database: "product_catalog_dev",
   hostname: "localhost",
   pool_size: 10
+
+
+  config :product_catalog, ProductCatalog.Mailer,
+    adapter: Bamboo.LocalAdapter
+

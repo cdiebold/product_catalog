@@ -2,10 +2,9 @@ defmodule ProductCatalog.Catalog.Product do
   use Ecto.Schema
   import Ecto.Changeset
 
-
   schema "products" do
-    field :name, :string
-    field :nsn, :string
+    field(:name, :string)
+    field(:nsn, :string)
 
     timestamps()
   end

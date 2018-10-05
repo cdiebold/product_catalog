@@ -20,6 +20,12 @@ defmodule ProductCatalogWeb.Router do
     get("/", PageController, :index)
     get("/contact", ContactController, :new)
     post("/contact", ContactController, :create)
+
+    
+  end
+
+  if Mix.env() == :dev do
+    forward("/sent_emails", Bamboo.SentEmailViewerPlug)
   end
 
   # Other scopes may use custom stacks.
