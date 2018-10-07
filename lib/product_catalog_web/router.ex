@@ -20,8 +20,6 @@ defmodule ProductCatalogWeb.Router do
     get("/", PageController, :index)
     get("/contact", ContactController, :new)
     post("/contact", ContactController, :create)
-
-    
   end
 
   if Mix.env() == :dev do

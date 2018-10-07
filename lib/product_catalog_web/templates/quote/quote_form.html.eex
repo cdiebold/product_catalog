@@ -1,0 +1,104 @@
+<div class='card'>
+  <div class='card-header'>
+    Quote
+  </div>
+  <div class='card-body'>
+    <%= form_for @changeset, quote_path(@conn, :create), [as: :quote, id: "quote-form"], fn f -> %>
+    <%= if @changeset.action do %>
+    <div id="form-error" class="alert alert-danger">
+      <p>Quote could not be submitted! Please check the errors in the form.</p>
+    </div>
+    <% end %>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <%= label f, :first_name, class: "control-label" %>
+          <%= text_input f, :first_name, class: "form-control" %>
+          <%= error_tag f, :first_name %>
+        </div>
+      </div>
+      <div class="col">
+        <div class="form-group">
+          <%= label f, :last_name, class: "control-label" %>
+          <%= text_input f, :last_name, class: "form-control" %>
+          <%= error_tag f, :last_name %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <div class="form-group">
+          <%= label f, :company_name, class: "control-label" %>
+          <%= text_input f, :company_name, class: "form-control" %>
+          <%= error_tag f, :company_name %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group">
+          <%= label f, :email_address, class: "control-label" %>
+          <%= text_input f, :email_address, class: "form-control" %>
+          <%= error_tag f, :email_address %>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group">
+          <%= label f, :phone_number, class: "control-label" %>
+          <%= text_input f, :phone_number, class: "form-control" %>
+          <%= error_tag f, :phone_number %>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group">
+          <% label f, :preferred_contact_method, class: "control-label" %>
+          <%= select f, ["Phone Number", "Email Address", "Both"] %>
+          <%= error_tag f, :preferred_contact_method %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group">
+          <%= label f, :nsn, class: "control-label" %>
+          <%= text_input f, :nsn, class: "form-control" %>
+          <%= error_tag f, :nsn %>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group">
+          <%= label f, :part_number, class: "control-label" %>
+          <%= text_input f, :part_number, class: "form-control" %>
+          <%= error_tag f, :part_number %>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-12">
+        <div class="form-group">
+          <%= label f, :quantity, class: "control-label" %>
+          <%= number_input f, :quantity, min: 1 %>
+          <%= error_tag f, :quantity %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <%= label f, :condition, class: "control-label" %>
+          <%= select f, :condition, @conditions, class: "form-control" %>
+          <%= error_tag f, :condition %>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-12">
+        <div class="form-group">
+          <%= label f, :priority, class: "control-label" %>
+          <%= select f, :priority, @priorities, class: "form-control" %>
+          <%= error_tag f, :priority %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <%= submit f, class: "btn btn-primary" %>
+    </div>
+    <% end %>
+  </div>
+</div>
